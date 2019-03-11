@@ -134,15 +134,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="States\GameState.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\States\GameState.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="States\GameState.h" />
-    <ClInclude Include="Handler.h" />
-    <ClInclude Include="States\State.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\States\GameState.h" />
+    <ClInclude Include="src\Handler.h" />
+    <ClInclude Include="src\States\State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
