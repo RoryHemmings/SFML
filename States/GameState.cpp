@@ -7,7 +7,7 @@
 GameState::GameState(Game* game)
 	: State(game), shape(30.0f)
 {
-	shape.setFillColor(sf::Color::Blue);
+	shape.setFillColor(sf::Color::Red);
 }
 
 void GameState::tick() {
