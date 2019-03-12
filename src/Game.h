@@ -9,43 +9,49 @@
 #include "States/State.h"
 #include "States/GameState.h"
 
-class Game
-{
+namespace sgf {
 
-public:
-	// Constructors
-	Game(int, int, int);
-	Game(int width, int height) : Game(width, height, 60) {}
+	class Game
+	{
 
-	// Thread Functions
-	void run();
+	public:
+		// Constructors
+		Game(int, int, int);
+		Game(int width, int height) : Game(width, height, 60) {}
 
-	// Loop Functions
-	void load();
-	void tick();
-	void render();
+		// Thread Functions
+		void run();
 
-	//Getters and Setters
-	int getWidth() const { return width; }
-	int getHeight() const { return height; }
-	int getFps() const { return fps; }
+		// Loop Functions
+		void load();
+		void tick();
+		void render();
 
-	State* getCurrentState() const { return currentState; }
+		//Getters and Setters
+		int getWidth() const { return width; }
+		int getHeight() const { return height; }
+		int getFps() const { return fps; }
 
-	void setFps(int n) { fps = n; }
-	void setCurrentState(State& s) { currentState = &s; }
+		State* getCurrentState() const { return currentState; }
 
-private:
-	// Member Functions
-	int width, height;
-	int fps;
+		sf::RenderWindow& getDisplay() { return display; }
 
-	// Display
-	sf::RenderWindow display;
+		void setFps(int n) { fps = n; }
+		void setCurrentState(State& s) { currentState = &s; }
 
-	// States
-	State* currentState;
+	private:
+		// Member Functions
+		int width, height;
+		int fps;
 
-};
+		// Display
+		sf::RenderWindow display;
+
+		// States
+		State* currentState;
+
+	};
+
+}
 
 #endif

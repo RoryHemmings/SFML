@@ -5,12 +5,15 @@
 
 #include "Game.h"
 #include "States/GameState.h"
+#include "assets/TextureManager.h"
 
 int main() {
-	Game game(1200, 800, 60);
+	sgf::Game game(1200, 800, 60);
 
 	GameState gameState(&game);
 	game.setCurrentState(gameState);
+
+	sgf::TextureManager::getInstance().addTexture("default", "../res/test.png");
 
 	game.run();
 

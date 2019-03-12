@@ -6,14 +6,15 @@
 #include <SFML/Graphics.hpp>
 
 #include "State.h"
+#include "../assets/TextureManager.h"
 
-class Game;
+class sgf::Game;
 
-class GameState : public State
+class GameState : public sgf::State
 {
 
 public:
-	GameState(Game*);
+	GameState(sgf::Game*);
 
 	void tick();
 	void render(sf::RenderWindow&);

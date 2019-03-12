@@ -5,21 +5,25 @@
 
 #include <SFML/Graphics.hpp>
 
-class Game;
+namespace sgf {
 
-class State
-{
+	class Game;
 
-public:
-	State(Game* game) : game(game) {};
+	class State
+	{
 
-	virtual void tick() {};
-	virtual void render(sf::RenderWindow& display) {};
+	public:
+		State(Game* game) : game(game) {};
 
-protected:
-	Game* game;
+		virtual void tick() {};
+		virtual void render(sf::RenderWindow& display) {};
 
-};
+	protected:
+		Game* game;
+
+	};
+
+}
 
 #endif
 

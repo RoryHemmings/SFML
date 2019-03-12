@@ -4,10 +4,10 @@
 
 #include "../Game.h"
 
-GameState::GameState(Game* game)
-	: State(game), shape(30.0f)
+GameState::GameState(sgf::Game* game)
+	: State(game)
 {
-	shape.setFillColor(sf::Color::Red);
+	
 }
 
 void GameState::tick() {
@@ -15,6 +15,8 @@ void GameState::tick() {
 }
 
 void GameState::render(sf::RenderWindow& display) {
-	shape.setOrigin(-(game->getWidth() / 2) + (shape.getRadius() / 2), -(game->getHeight() / 2) + (shape.getRadius() / 2));
-	display.draw(shape);
+	sf::Sprite sprite;
+	sprite.setTexture(sgf::TextureManager::getInstance().getTexture("default"));
+	sprite.setScale(10, 10);
+	display.draw(sprite);
 }
