@@ -15,8 +15,5 @@ void GameState::tick() {
 }
 
 void GameState::render(sf::RenderWindow& display) {
-	sf::Sprite sprite;
-	sprite.setTexture(sgf::TextureManager::getInstance().getTexture("default"));
-	sprite.setScale(10, 10);
-	display.draw(sprite);
+	sgf::AssetUtils::getInstance().drawImage(display, sgf::TextureManager::getInstance().getTexture("default"), 100, 100);
 }

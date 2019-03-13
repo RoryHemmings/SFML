@@ -7,6 +7,7 @@
 
 #include "State.h"
 #include "../assets/TextureManager.h"
+#include "../utils/AssetUtils.h"
 
 class sgf::Game;
 

@@ -17,7 +17,7 @@ int main() {
 
 	game.run();
 
-	//system("pause");
+	system("pause");
 	return 0;
 }
 
