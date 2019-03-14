@@ -15,6 +15,7 @@ namespace sgf {
 	public:
 		State(Game* game) : game(game) {};
 
+		// Make Framerates uncapped
 		virtual void tick() {};
 		virtual void render(sf::RenderWindow& display) {};
 
