@@ -134,6 +134,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Entitys\Entity.cpp" />
     <ClCompile Include="src\utils\AssetUtils.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\States\GameState.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="src\assets\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Entitys\Entity.h" />
     <ClInclude Include="src\utils\AssetUtils.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\States\GameState.h" />
