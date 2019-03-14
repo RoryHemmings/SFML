@@ -1,4 +1,4 @@
-# Basic SFML Game Framework
+# Simple Game Framework
 A simple c++ game framework using SFML
 
 # Features
