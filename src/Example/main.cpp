@@ -3,9 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
-#include "Game.h"
-#include "States/GameState.h"
-#include "assets/TextureManager.h"
+#include "../Game.h"
+#include "GameState.h"
+#include "../assets/TextureManager.h"
 
 int main() {
 	sgf::Game game(1200, 800, 60);
@@ -17,7 +17,7 @@ int main() {
 
 	game.run();
 
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

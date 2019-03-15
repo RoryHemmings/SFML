@@ -14,4 +14,12 @@ namespace sgf {
 
 	}
 
+	void Entity::tick() {
+
+	}
+
+	void Entity::render() {
+
+	}
+
 }

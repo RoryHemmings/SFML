@@ -137,15 +137,15 @@
     <ClCompile Include="src\Entitys\Entity.cpp" />
     <ClCompile Include="src\utils\AssetUtils.cpp" />
     <ClCompile Include="src\Game.cpp" />
-    <ClCompile Include="src\States\GameState.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Example\GameState.cpp" />
+    <ClCompile Include="src\Example\main.cpp" />
     <ClCompile Include="src\assets\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Entitys\Entity.h" />
     <ClInclude Include="src\utils\AssetUtils.h" />
     <ClInclude Include="src\Game.h" />
-    <ClInclude Include="src\States\GameState.h" />
+    <ClInclude Include="src\Example\GameState.h" />
     <ClInclude Include="src\Handler.h" />
     <ClInclude Include="src\States\State.h" />
     <ClInclude Include="src\assets\TextureManager.h" />

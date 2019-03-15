@@ -15,6 +15,9 @@ namespace sgf {
 	public:
 		Entity(Game*, float, float, sf::Sprite);
 		Entity(Game*, float, float, int, int, sf::Sprite);
+
+		void tick();
+		void render();
 		
 		// Getters and Setters
 		float getX() const { return x; }

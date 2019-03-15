@@ -4,6 +4,8 @@
 
 #include "../Game.h"
 
+int x = 0;
+
 GameState::GameState(sgf::Game* game)
 	: State(game)
 {
@@ -11,9 +13,9 @@ GameState::GameState(sgf::Game* game)
 }
 
 void GameState::tick() {
-
+	x += 1;
 }
 
 void GameState::render(sf::RenderWindow& display) {
-	sgf::AssetUtils::getInstance().drawImage(display, sgf::TextureManager::getInstance().getTexture("default"), 100, 100);
+	sgf::AssetUtils::getInstance().drawImage(display, sgf::TextureManager::getInstance().getTexture("default"), x, 100);
 }

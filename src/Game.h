@@ -7,7 +7,6 @@
 #include <SFML/System.hpp>
 
 #include "States/State.h"
-#include "States/GameState.h"
 
 namespace sgf {
 
