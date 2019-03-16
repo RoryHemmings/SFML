@@ -4,16 +4,16 @@
 #include <SFML/System.hpp>
 
 #include "../Game.h"
-#include "GameState.h"
+#include "States/GameState.h"
 #include "../assets/TextureManager.h"
 
 int main() {
+	sgf::TextureManager::getInstance().addTexture("default", "../res/test.png");
+
 	sgf::Game game(1200, 800, 60);
 
 	GameState gameState(&game);
 	game.setCurrentState(gameState);
-
-	sgf::TextureManager::getInstance().addTexture("default", "../res/test.png");
 
 	game.run();
 

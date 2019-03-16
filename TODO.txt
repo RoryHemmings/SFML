@@ -1,3 +1,12 @@
 Redo fps system for uncapped framerates
 
-redo sprites as textures in entity
+-redo sprites as textures in entity
+
+add texture macro
+
+add entity manager
+
+make entity texture array
+
+Questions
+- how can i make the update sprite position automatic

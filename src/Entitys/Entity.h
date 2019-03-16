@@ -5,19 +5,19 @@
 
 #include <SFML/Graphics.hpp>
 
-class Game;
-
 namespace sgf {
+
+	class Game;
 
 	class Entity
 	{
 
 	public:
-		Entity(Game*, float, float, sf::Sprite);
-		Entity(Game*, float, float, int, int, sf::Sprite);
+		Entity(Game*, float, float, const sf::Texture&);
+		Entity(Game*, float, float, int, int, const sf::Texture&);
 
-		void tick();
-		void render();
+		virtual void tick();
+		virtual void render(sf::RenderWindow&);
 		
 		// Getters and Setters
 		float getX() const { return x; }
@@ -26,22 +26,29 @@ namespace sgf {
 		float getHeight() const { return height; }
 
 		sf::Sprite getSprite() const { return sprite; }
+		sf::Texture getTexture() const { return texture; }
 
 		void setX(float nx) { x = nx; }
 		void setY(float ny) { y = ny; }
 		void setWidth(float nwidth) { width = nwidth; }
 		void setHeight(float nheight) { height = nheight; }
 
-		void setSprite(const sf::Sprite& s) { sprite = s; }
+		void setTexture(const sf::Texture& t) { texture = t; }
 
-	private:
+	protected:
 		Game* game;
 
 		float x, y;
 		int width, height;
 
-		// Rework sprite system to use textures
+		// Textures
+		sf::Texture texture;
 		sf::Sprite sprite;
+
+	protected:
+		void updateSpritePosition() {
+			sprite.setPosition(x, y);
+		}
 
 	};
 }

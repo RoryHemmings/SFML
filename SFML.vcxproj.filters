@@ -27,10 +27,13 @@
     <ClCompile Include="src\Entitys\Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Example\GameState.cpp">
+    <ClCompile Include="src\Example\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Example\main.cpp">
+    <ClCompile Include="src\Example\States\GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Example\Entitys\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +56,10 @@
     <ClInclude Include="src\Entitys\Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Example\GameState.h">
+    <ClInclude Include="src\Example\States\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Example\Entitys\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

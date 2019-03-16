@@ -5,9 +5,11 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "../States/State.h"
-#include "../assets/TextureManager.h"
-#include "../utils/AssetUtils.h"
+#include "../../Game.h"
+#include "../../States/State.h"
+#include "../../assets/TextureManager.h"
+#include "../../utils/AssetUtils.h"
+#include "../Entitys/Player.h"
 
 class sgf::Game;
 
@@ -21,7 +23,7 @@ public:
 	void render(sf::RenderWindow&);
 
 private:
-	sf::CircleShape shape;
+	Player player;
 
 };
 
