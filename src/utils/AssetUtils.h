@@ -3,6 +3,8 @@
 #ifndef GAURD_ASSET_UTILS_H
 #define GAURD_ASSET_UTILS_H
 
+#include "../Macros.h"
+
 #include <SFML/Graphics.hpp>
 
 namespace sgf {

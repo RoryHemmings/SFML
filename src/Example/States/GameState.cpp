@@ -3,7 +3,7 @@
 #include "GameState.h"
 
 GameState::GameState(sgf::Game* game)
-	: State(game), player(game, 100.0f, 100.0f, sgf::TextureManager::getInstance().getTexture("default"))
+	: State(game), player(game, 100.0f, 100.0f, GET_TEXTURE("default"))
 {
 	
 }

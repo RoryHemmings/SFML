@@ -3,6 +3,8 @@
 #ifndef GAURD_GAME_STATE_H
 #define GAURD_GAME_STATE_H
 
+#include "../../Macros.h"
+
 #include <SFML/Graphics.hpp>
 
 #include "../../Game.h"

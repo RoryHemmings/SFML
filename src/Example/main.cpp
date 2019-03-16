@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "../Macros.h"
+
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
@@ -8,7 +10,7 @@
 #include "../assets/TextureManager.h"
 
 int main() {
-	sgf::TextureManager::getInstance().addTexture("default", "../res/test.png");
+	TEXTURE_MANAGER.addTexture("default", "../res/test.png");
 
 	sgf::Game game(1200, 800, 60);
 

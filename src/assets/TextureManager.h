@@ -3,6 +3,8 @@
 #ifndef GAURD_TEXTURE_MANAGER_H
 #define GAURD_TEXTURE_MANAGER_H
 
+#include "../Macros.h"
+
 #include <SFML/Graphics.hpp>
 
 #include <unordered_map>

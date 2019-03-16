@@ -3,6 +3,8 @@
 #ifndef GAURD_PLAYER_H
 #define GAURD_PLAYER_H
 
+#include "../../Macros.h"
+
 #include <SFML/Graphics.hpp>
 
 #include "../../Entitys/Entity.h"

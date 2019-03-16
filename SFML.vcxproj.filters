@@ -62,5 +62,8 @@
     <ClInclude Include="src\Example\Entitys\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

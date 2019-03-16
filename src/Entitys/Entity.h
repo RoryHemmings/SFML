@@ -3,6 +3,8 @@
 #ifndef GAURD_ENTITY_H
 #define GAURD_ENTITY_H
 
+#include "../Macros.h"
+
 #include <SFML/Graphics.hpp>
 
 namespace sgf {

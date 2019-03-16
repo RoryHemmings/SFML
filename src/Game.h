@@ -3,6 +3,8 @@
 #ifndef GAURD_GAME_H
 #define GAURD_GAME_H
 
+#include "Macros.h"
+
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 

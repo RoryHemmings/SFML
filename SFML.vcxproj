@@ -151,6 +151,7 @@
     <ClInclude Include="src\Handler.h" />
     <ClInclude Include="src\States\State.h" />
     <ClInclude Include="src\assets\TextureManager.h" />
+    <ClInclude Include="src\Macros.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
