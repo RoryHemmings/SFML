@@ -41,7 +41,7 @@ namespace sgf {
 		void setCurrentState(State& s) { currentState = &s; }
 
 	private:
-		// Member Functions
+		// Member Variables
 		int width, height;
 		int fps;
 
